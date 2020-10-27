@@ -24,7 +24,7 @@ export default function Login() {
     return (
         <div className="page">
             <h2>Log in</h2>
-            <form onSubmit={submit}>
+            <form className="form" onSubmit={submit}>
                 <label htmlFor="login-email">Email</label>
                 <input id="login-email" type="email" onChange={(e) => setEmail(e.target.value)}/>
                 <label htmlFor="login-password">Password</label>

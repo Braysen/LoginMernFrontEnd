@@ -33,6 +33,11 @@ body{
     padding: 1rem;
 }
 
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
 /* Header */
 #header{
     height: 50px;
@@ -89,8 +94,17 @@ body{
 }
 
 .form input:focus{
+    border: 1px solid #50a4e9;
+    box-shadow: inset 0px 0px 5px rgba(38,142,228,0.5);
     outline: none;
-    border: 1px solid #268ee4;
+}
+
+.form input[type="submit"]{
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #6aa051;
+    background-color: #c8ecb7;
+    font-size: 1.1rem;
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 550px){
