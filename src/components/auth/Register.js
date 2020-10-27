@@ -15,7 +15,7 @@ export default function Register() {
     const submit = async (e) => {
         e.preventDefault();
         const newUser = {email,password,passwordCheck,displayName};
-        const registerRes= await Axios.post("http://localhost:5000/users/register", newUser);
+        await Axios.post("http://localhost:5000/users/register", newUser);
         const loginRes = await Axios.post("http://localhost:5000/users/login",{email,password});
         setUserData({
             token: loginRes.data.token,
@@ -28,7 +28,7 @@ export default function Register() {
     return (
         <div className="page">
             <h2>Register</h2>
-            <form onSubmit={submit}>
+            <form className="form" onSubmit={submit}>
                 <label htmlFor="register-email">Email</label>
                 <input id="register-email" type="email" onChange={(e) => setEmail(e.target.value)}/>
                 <label htmlFor="register-password">Password</label>

@@ -64,6 +64,35 @@ body{
     background-color: #f81717;
 }
 
+.form label,
+.form input{
+    display: block;
+}
+
+.form input{
+    margin-bottom: 1rem;
+}
+
+.form label{
+    margin-bottom: 0.2rem;
+}
+
+.form input[type ="text"],
+.form input[type ="email"],
+.form input[type ="password"]{
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid #c2c2c2;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.form input:focus{
+    outline: none;
+    border: 1px solid #268ee4;
+}
+
 @media screen and (max-width: 550px){
     #header .title{
         font-size: 1.2rem;
